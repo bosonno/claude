@@ -51,6 +51,10 @@ html,body{
 <body>
 
 <div class="bg"></div>
+<script>
+  const h = new Date().getHours();
+  document.querySelector('.bg').style.backgroundImage = h >= 6 && h < 20 ? 'url("sun.png")' : 'url("moon.png")';
+</script>
 <img id="claude" src="claude.gif">
 
 <audio autoplay loop>
